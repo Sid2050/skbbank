@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:school
+    username: sa
+    password:
+  flyway:
+    enabled: true
+  h2:
+    console:
+      enabled: true
+
+server:
+  port: 8080
+
+app:
+  classNumber: 0
+  fio: 1
+  subject: 2
+  estimation: 3
+  dateReceive: 4
+  separator: ";"
