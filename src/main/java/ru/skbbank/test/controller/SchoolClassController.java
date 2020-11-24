@@ -43,7 +43,7 @@ public class SchoolClassController {
         return ResponseEntity.ok(averageGrades);
     }
 
-    @ApiOperation(value = "Получить средний балл по классу (Использует SQL запрос)")
+    @ApiOperation(value = "Получить средний балл по классу за весь период (Использует SQL запрос)")
     @GetMapping("/sql/{numberClass}")
     public ResponseEntity<List<AverageGradeDto>> getAverageGradeSql(
             @ApiParam(value = "Номер класса", required = true) @PathVariable String numberClass) {

@@ -93,6 +93,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
             do {
                 AverageGradeDto averageGrade = new AverageGradeDto();
                 averageGrade.setFio(rs.getString("fio"));
+                averageGrade.setYear(rs.getInt("year"));
                 averageGrade.setMonth(rs.getInt("month"));
                 averageGrade.setAverage(rs.getDouble("average"));
                 averageGrades.add(averageGrade);
